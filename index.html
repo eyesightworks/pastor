@@ -18,7 +18,7 @@
 }
 
 body {
-  /* Removed background color */
+  background: #000; /* black background */
   font-family: "Segoe UI", Arial, sans-serif;
   color: white;
 }
@@ -31,7 +31,6 @@ body {
   color: white;
   position: relative;
   padding: 20px 30px;
-  /* Removed background */
 }
 
 /* HEADER */
@@ -64,7 +63,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 40px;
-  margin-top: 65px;
+  margin-top: 80px; /* Adjusted for 1-inch gap */
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
@@ -74,36 +73,32 @@ body {
 .leader {
   text-align: center;
   color: white;
-  width: 280px;
+  width: 320px; /* wider container */
 }
 
-/* Added box around leader names */
+/* Wider name box */
 .leader .name-box {
   border: 3px solid gold;
-  padding: 12px 10px;
-  margin-top: 10px;
+  padding: 16px 14px; /* more padding */
+  margin-top: 12px;
   border-radius: 10px;
   background: rgba(0, 0, 0, 0.6);
-  white-space: nowrap; /* prevent wrapping */
-  overflow: hidden;
-  text-overflow: ellipsis;
+  width: 100%; /* full width of container */
+  box-sizing: border-box;
 }
 
 .leader img {
-  width: 100%;
+  width: 320px; /* bigger images */
   border-radius: 10px;
-  filter: drop-shadow(0 0 20px rgba(255,215,0,.9));
+  filter: drop-shadow(0 0 25px rgba(255,215,0,.9));
+  display: block;
+  margin: 0 auto;
 }
 
 .leader h2,
 .leader h3 {
   margin: 0;
   padding: 0;
-}
-
-/* Specific adjustment: move right leader 1 inch more to the right */
-.leader.right-leader {
-  margin-left: 96px; /* approx 1 inch at 96dpi */
 }
 
 /* CENTER MESSAGE between leaders */
@@ -250,8 +245,8 @@ body {
       <p>You’re Welcome</p>
     </div>
 
-    <!-- Pastor Right with 1 inch margin-left -->
-    <div class="leader right-leader">
+    <!-- Pastor Right -->
+    <div class="leader">
       <img src="assets/images/pastor.png" alt="Prophet Adeolu" />
       <div class="name-box">
         <h2>Prophet Adeolu</h2>
