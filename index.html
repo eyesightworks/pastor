@@ -18,8 +18,9 @@
 }
 
 body {
-  background: #000;
+  background: #000; /* black background */
   font-family: "Segoe UI", Arial, sans-serif;
+  color: white;
 }
 
 /* MAIN POSTER */
@@ -27,9 +28,6 @@ body {
   width: 794px;       /* A4 width @96dpi */
   height: 1123px;     /* A4 height */
   margin: auto;
-  background: 
-    linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
-    url("assets/images/background-gradient.png") center/cover no-repeat;
   color: white;
   position: relative;
   padding: 20px 30px;
@@ -78,22 +76,25 @@ body {
   width: 280px;
 }
 
+/* Added box around leader names */
+.leader .name-box {
+  border: 3px solid gold;
+  padding: 12px 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
 .leader img {
   width: 100%;
   border-radius: 10px;
   filter: drop-shadow(0 0 20px rgba(255,215,0,.9));
 }
 
-.leader h2 {
-  color: #f5c542;
-  font-weight: 700;
-  margin-top: 12px;
-  font-size: 26px;
-}
-
+.leader h2,
 .leader h3 {
-  font-weight: 600;
-  font-size: 20px;
+  margin: 0;
+  padding: 0;
 }
 
 /* CENTER MESSAGE between leaders */
@@ -101,17 +102,17 @@ body {
   text-align: center;
   max-width: 320px;
   color: #f5c542;
-  user-select: none; /* prevent accidental selection */
+  user-select: none;
 }
 
 .center-message h2 {
-  font-size: 28px;
+  font-size: 38px;
   letter-spacing: 3px;
   margin-bottom: 0.2em;
 }
 
 .center-message h1 {
-  font-size: 78px;
+  font-size: 110px;
   text-shadow:
     0 0 10px #f5c542,
     0 0 25px #c28f2c,
@@ -120,7 +121,7 @@ body {
 }
 
 .center-message h3 {
-  font-size: 30px;
+  font-size: 42px;
   letter-spacing: 2px;
   margin-top: 0.2em;
 }
@@ -211,13 +212,13 @@ body {
 
   <!-- HEADER -->
   <div class="header">
-    <img src="assets/images/logo-left.png" alt="Logo Left" />
+    <img src="assets/images/logo-left.jpg" alt="Logo Left" />
     <div class="header-text">
       <h1>THE SACRED CHERUBIM AND SERAPHIAM CHURCH OF NIGERIA AND OVERSEA</h1>
       <h2>ITED ANU CHERUBIM AND SERAPHIAM CHURCH</h2>
     </div>
     <img src="assets/images/logo-right1.png" alt="Logo Right 1" />
-    <img src="assets/images/logo-right2.png" alt="Logo Right 2" />
+    <img src="assets/images/logo-right2.jpg" alt="Logo Right 2" />
   </div>
 
   <!-- LEADERS + CENTER MESSAGE ROW -->
@@ -226,8 +227,10 @@ body {
     <!-- Spiritual Mother Left -->
     <div class="leader">
       <img src="assets/images/spiritual-mother.png" alt="Senior Prophet Abosede Adedeji" />
-      <h2>Senior Prophet Abosede Adedeji</h2>
-      <h3>A.K.A Aremolekun</h3>
+      <div class="name-box">
+        <h2>Senior Prophet Abosede Adedeji</h2>
+        <h3>A.K.A Aremolekun</h3>
+      </div>
     </div>
 
     <!-- Center Message -->
@@ -241,8 +244,10 @@ body {
     <!-- Pastor Right -->
     <div class="leader">
       <img src="assets/images/pastor.png" alt="Prophet Adeolu" />
-      <h2>Prophet Adeolu</h2>
-      <h3>A.K.A OKIKI JESU</h3>
+      <div class="name-box">
+        <h2>Prophet Adeolu</h2>
+        <h3>A.K.A OKIKI JESU</h3>
+      </div>
     </div>
 
   </div>
