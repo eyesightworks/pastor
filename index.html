@@ -18,22 +18,20 @@
 }
 
 body {
-  background: #000; /* black background */
+  background: #000;
   font-family: "Segoe UI", Arial, sans-serif;
   color: white;
 }
 
-/* MAIN POSTER */
 .poster {
-  width: 794px;       /* A4 width @96dpi */
-  height: 1123px;     /* A4 height */
+  width: 794px;
+  height: 1123px;
   margin: auto;
   color: white;
   position: relative;
   padding: 20px 30px;
 }
 
-/* HEADER */
 .header {
   background: white;
   display: flex;
@@ -60,32 +58,34 @@ body {
 /* LEADERS + CENTER MESSAGE ROW */
 .leaders-center-row {
   display: flex;
-  justify-content: center;
+  justify-content: space-between; /* spread out */
   align-items: center;
-  gap: 40px;
   margin-top: 65px;
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
+  gap: 0; /* remove gap */
 }
 
-/* Leader images styling */
+/* Leader styling */
 .leader {
   text-align: center;
   color: white;
   width: 280px;
 }
 
-/* Adjust positions: move spiritual mother more left, pastor more right */
+/* Put spiritual mother fully left */
 .leader.spiritual {
-  margin-right: auto; /* pushes to far left */
+  margin-right: auto;
+  margin-left: 0;
 }
 
+/* Put pastor fully right */
 .leader.pastor {
-  margin-left: auto; /* pushes to far right */
+  margin-left: auto;
+  margin-right: 0;
 }
 
-/* Added box around leader names */
 .leader .name-box {
   border: 3px solid gold;
   padding: 12px 10px;
@@ -106,7 +106,6 @@ body {
   padding: 0;
 }
 
-/* CENTER MESSAGE between leaders */
 .center-message {
   text-align: center;
   max-width: 320px;
@@ -140,7 +139,6 @@ body {
   font-size: 20px;
 }
 
-/* PROGRAM BOX */
 .program {
   background: linear-gradient(#ffd44d, #f1b90b);
   color: #000;
@@ -158,14 +156,12 @@ body {
   margin-bottom: 12px;
 }
 
-/* LOCATION */
 .location {
   margin-top: 18px;
   text-align: center;
   font-size: 18px;
 }
 
-/* JESUS */
 .jesus {
   text-align: center;
   font-size: 42px;
@@ -174,7 +170,6 @@ body {
   text-shadow: 0 0 15px gold;
 }
 
-/* FOOTER */
 .footer {
   position: absolute;
   bottom: 0;
@@ -187,7 +182,6 @@ body {
   padding: 16px;
 }
 
-/* MOBILE PREVIEW ONLY */
 @media screen and (max-width: 900px) {
   .poster {
     width: 100%;
@@ -219,7 +213,6 @@ body {
 
 <div class="poster">
 
-  <!-- HEADER -->
   <div class="header">
     <img src="assets/images/logo-left.jpg" alt="Logo Left" />
     <div class="header-text">
@@ -230,10 +223,8 @@ body {
     <img src="assets/images/logo-right2.jpg" alt="Logo Right 2" />
   </div>
 
-  <!-- LEADERS + CENTER MESSAGE ROW -->
   <div class="leaders-center-row">
 
-    <!-- Spiritual Mother Left -->
     <div class="leader spiritual">
       <img src="assets/images/spiritual-mother.png" alt="Senior Prophet Abosede Adedeji" />
       <div class="name-box">
@@ -242,7 +233,6 @@ body {
       </div>
     </div>
 
-    <!-- Center Message -->
     <div class="center-message">
       <h2>THERE IS NO</h2>
       <h1>CH_RCH</h1>
@@ -250,7 +240,6 @@ body {
       <p>You’re Welcome</p>
     </div>
 
-    <!-- Pastor Right -->
     <div class="leader pastor">
       <img src="assets/images/pastor.png" alt="Prophet Adeolu" />
       <div class="name-box">
@@ -261,7 +250,6 @@ body {
 
   </div>
 
-  <!-- PROGRAM BOX BELOW -->
   <div class="program">
     <p>Sunday Service: (9am - 12pm)</p>
     <p>Tuesday: Night Vigil (12:00am)</p>
@@ -269,15 +257,12 @@ body {
     <p>Monthly Program Night Vigil: 21, 22, 23 Every Month</p>
   </div>
 
-  <!-- LOCATION -->
   <div class="location">
     Oke Imole Ayo No 4, Elekuru, Akinyele Local Government, Moniya, Ibadan
   </div>
 
-  <!-- JESUS -->
   <div class="jesus">JESUS IS LORD</div>
 
-  <!-- FOOTER -->
   <div class="footer">
     Tel: 07080785785, 09051552181
   </div>
