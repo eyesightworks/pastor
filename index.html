@@ -18,7 +18,7 @@
 }
 
 body {
-  background: #000; /* black background */
+  /* Removed background color */
   font-family: "Segoe UI", Arial, sans-serif;
   color: white;
 }
@@ -31,6 +31,7 @@ body {
   color: white;
   position: relative;
   padding: 20px 30px;
+  /* Removed background */
 }
 
 /* HEADER */
@@ -62,35 +63,18 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 40px;
   margin-top: 65px;
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* Spiritual mother left with 1 inch right margin */
-.leader.spiritual {
-  margin-right: 96px; /* ~1 inch */
-  margin-left: 0;
-  text-align: center;
-  color: white;
-  width: 350px;
-}
-
-/* Pastor right with 1 inch left margin */
-.leader.pastor {
-  margin-left: 96px; /* ~1 inch */
-  margin-right: 0;
-  text-align: center;
-  color: white;
-  width: 350px;
-}
-
 /* Leader images styling */
-.leader img {
-  width: 100%;
-  border-radius: 10px;
-  filter: drop-shadow(0 0 25px rgba(255,215,0,.95));
+.leader {
+  text-align: center;
+  color: white;
+  width: 280px;
 }
 
 /* Added box around leader names */
@@ -102,11 +86,21 @@ body {
   background: rgba(0, 0, 0, 0.6);
 }
 
-/* Leader text */
+.leader img {
+  width: 100%;
+  border-radius: 10px;
+  filter: drop-shadow(0 0 20px rgba(255,215,0,.9));
+}
+
 .leader h2,
 .leader h3 {
   margin: 0;
   padding: 0;
+}
+
+/* Specific adjustment: move right leader 1 inch more to the right */
+.leader.right-leader {
+  margin-left: 96px; /* approx 1 inch at 96dpi */
 }
 
 /* CENTER MESSAGE between leaders */
@@ -204,13 +198,11 @@ body {
   }
 
   .leader {
-    width: 80% !important;
-    margin: 0 !important;
+    width: 80%;
   }
 
   .center-message {
     max-width: 100%;
-    margin: 40px 0;
   }
 
   .program {
@@ -239,7 +231,7 @@ body {
   <div class="leaders-center-row">
 
     <!-- Spiritual Mother Left -->
-    <div class="leader spiritual">
+    <div class="leader">
       <img src="assets/images/spiritual-mother.png" alt="Senior Prophet Abosede Adedeji" />
       <div class="name-box">
         <h2>Senior Prophet Abosede Adedeji</h2>
@@ -255,8 +247,8 @@ body {
       <p>You’re Welcome</p>
     </div>
 
-    <!-- Pastor Right -->
-    <div class="leader pastor">
+    <!-- Pastor Right with 1 inch margin-left -->
+    <div class="leader right-leader">
       <img src="assets/images/pastor.png" alt="Prophet Adeolu" />
       <div class="name-box">
         <h2>Prophet Adeolu</h2>
