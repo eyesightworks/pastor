@@ -6,219 +6,225 @@
 <title>Modern Church Poster</title>
 
 <style>
-  @page { size: A4; margin: 0; }
+    @page { size: A4; margin: 0; }
 
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', Arial, sans-serif;
-    background: #000;
-  }
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Segoe UI', Arial, sans-serif;
+        background: #000;
+    }
 
-  /* 🌟 YOUR NEW BACKGROUND CLASS */
-  .background-gradient {
-    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
-                url('assets/images/bg-fire.jpg') center/cover no-repeat;
-  }
+    /* BACKGROUND CLASS */
+    .background-gradient {
+        background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+                    url('assets/images/bg-fire.jpg') center/cover no-repeat;
+    }
 
-  .poster {
-    width: 794px;
-    height: 1123px;
-    margin: auto;
-    color: #fff;
-    position: relative;
-    padding: 20px 30px;
-  }
+    .poster {
+        width: 794px;
+        height: 1123px;
+        margin: auto;
+        color: #fff;
+        position: relative;
+        padding: 20px 30px;
+    }
 
-  /* HEADER */
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0;
-    border-bottom: 2px solid gold;
-  }
+    /* HEADER */
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+        border-bottom: 2px solid gold;
+    }
 
-  .logos img { height: 60px; margin-right: 12px; }
+    .logos img {
+        height: 60px;
+        margin-right: 12px;
+    }
 
-  .header-title { text-align: center; flex: 1; }
-  .header-title h1 {
-    font-size: 22px;
-    font-weight: 800;
-    color: gold;
-  }
-  .header-title h2 {
-    font-size: 16px;
-    margin-top: 4px;
-    color: #fff;
-  }
+    .header-title {
+        text-align: center;
+        flex: 1;
+    }
+    .header-title h1 {
+        font-size: 22px;
+        font-weight: 800;
+        color: gold;
+    }
+    .header-title h2 {
+        font-size: 16px;
+        margin-top: 4px;
+        color: #fff;
+    }
 
-  /* CENTER MESSAGE */
-  .center { text-align: center; margin-top: 40px; }
-  .center h2 { font-size: 30px; letter-spacing: 3px; }
-  .center h1 {
-    font-size: 90px;
-    color: gold;
-    font-weight: 900;
-    text-shadow: 0 0 25px gold;
-  }
-  .center h3 { font-size: 32px; letter-spacing: 2px; }
-  .center p { margin-top: 10px; font-size: 22px; }
+    /* CENTER MESSAGE */
+    .center {
+        text-align: center;
+        margin-top: 40px;
+    }
+    .center h2 {
+        font-size: 30px;
+        letter-spacing: 3px;
+    }
+    .center h1 {
+        font-size: 90px;
+        color: gold;
+        font-weight: 900;
+        text-shadow: 0 0 25px gold;
+    }
+    .center h3 {
+        font-size: 32px;
+        letter-spacing: 2px;
+    }
+    .center p {
+        margin-top: 10px;
+        font-size: 22px;
+    }
 
-  /* CONTENT */
-  .content {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 60px;
-  }
+    /* PROGRAM BOX */
+    .program {
+        width: 70%;
+        margin: 40px auto 0;
+        background: rgba(255,215,0,0.85);
+        padding: 20px;
+        color: #000;
+        border-radius: 10px;
+        box-shadow: 0 0 25px rgba(0,0,0,.6);
+    }
+    .program p {
+        margin-bottom: 14px;
+        font-size: 18px;
+        font-weight: 600;
+    }
 
-  .program {
-    width: 48%;
-    background: rgba(255,215,0,0.85);
-    padding: 20px;
-    color: #000;
-    border-radius: 10px;
-    box-shadow: 0 0 25px rgba(0,0,0,.6);
-  }
-  .program p {
-    margin-bottom: 14px;
-    font-size: 18px;
-    font-weight: 600;
-  }
+    /* LEADERS SIDE-BY-SIDE */
+    .leaders {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 50px;
+        margin-top: 50px;
+    }
 
-  /* CENTERED IMAGE */
-  .profile {
-    width: 48%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .profile img {
-    width: 320px;
-    border-radius: 8px;
-    box-shadow: 0 0 20px gold;
-  }
+    .leader-box {
+        text-align: center;
+        color: white;
+        width: 300px;
+    }
 
-  /* PASTOR NAME */
-  .name-box {
-    background: linear-gradient(#5c0a0a, #330505);
-    width: 70%;
-    margin: 40px auto 0;
-    padding: 18px;
-    text-align: center;
-    border-radius: 12px;
-    box-shadow: 0 0 25px rgba(0,0,0,.7);
-  }
-  .name-box h2 {
-    font-size: 30px;
-    color: gold;
-  }
-  .name-box h3 {
-    font-size: 22px;
-    margin-top: 6px;
-  }
+    .leader-img {
+        width: 280px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px gold;
+    }
 
-  /* SPIRITUAL MOTHER */
-  .mother-section {
-    margin-top: 40px;
-    display: flex;
-    align-items: center;
-    gap: 25px;
-    color: white;
-  }
-  .mother-section img {
-    width: 260px;
-    border-radius: 10px;
-  }
-  .mother-section div {
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 1.4;
-  }
+    .leader-box h2 {
+        margin-top: 12px;
+        font-size: 26px;
+        font-weight: 800;
+        color: gold;
+    }
 
-  .location { text-align: center; font-size: 20px; margin-top: 18px; }
-  .jesus {
-    text-align: center;
-    font-size: 44px;
-    margin-top: 18px;
-    color: gold;
-    text-shadow: 0 0 15px gold;
-    font-weight: 900;
-  }
+    .leader-box h3 {
+        font-size: 20px;
+        margin-top: 5px;
+    }
 
-  .footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background: #900;
-    color: gold;
-    font-size: 26px;
-    text-align: center;
-    padding: 14px;
-    font-weight: 700;
-  }
+    /* EXTRAS */
+    .location {
+        text-align: center;
+        font-size: 20px;
+        margin-top: 18px;
+    }
+
+    .jesus {
+        text-align: center;
+        font-size: 44px;
+        margin-top: 18px;
+        color: gold;
+        text-shadow: 0 0 15px gold;
+        font-weight: 900;
+    }
+
+    .footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: #900;
+        color: gold;
+        font-size: 26px;
+        text-align: center;
+        padding: 14px;
+        font-weight: 700;
+    }
+
 </style>
 </head>
 
 <body>
 
-<!-- APPLY THE BACKGROUND HERE -->
 <div class="poster background-gradient">
 
-  <div class="header">
-    <div class="logos">
-      <img src="assets/images/logo-left.jpg">
+    <!-- HEADER -->
+    <div class="header">
+        <div class="logos">
+            <img src="assets/images/logo-left.jpg">
+        </div>
+
+        <div class="header-title">
+            <h1>THE SACRED CHERUBIM AND SERAPHIM CHURCH OF NIGERIA AND OVERSEA</h1>
+            <h2>ITED ANU CHERUBIM AND SERAPHIM CHURCH</h2>
+        </div>
+
+        <div class="logos">
+            <img src="assets/images/logo-right1.png">
+            <img src="assets/images/logo-right2.jpg">
+        </div>
     </div>
 
-    <div class="header-title">
-      <h1>THE SACRED CHERUBIM AND SERAPHIM CHURCH OF NIGERIA AND OVERSEA</h1>
-      <h2>ITED ANU CHERUBIM AND SERAPHIM CHURCH</h2>
+    <!-- CENTER MESSAGE -->
+    <div class="center">
+        <h2>THERE IS NO</h2>
+        <h1>CH_RCH</h1>
+        <h3>WITHOUT U</h3>
+        <p>You’re Welcome</p>
     </div>
 
-    <div class="logos">
-      <img src="assets/images/logo-right1.png">
-      <img src="assets/images/logo-right2.jpg">
-    </div>
-  </div>
-
-  <div class="center">
-    <h2>THERE IS NO</h2>
-    <h1>CH_RCH</h1>
-    <h3>WITHOUT U</h3>
-    <p>You’re Welcome</p>
-  </div>
-
-  <div class="content">
+    <!-- PROGRAM -->
     <div class="program">
-      <p>Sunday Service: (9am - 12pm)</p>
-      <p>Tuesday: Night Vigil (12:00am)</p>
-      <p>Friday: Night Vigil (12:00am)</p>
-      <p>Monthly Program Night Vigil: 21, 22, 23 Every Month</p>
+        <p>Sunday Service: (9am - 12pm)</p>
+        <p>Tuesday: Night Vigil (12:00am)</p>
+        <p>Friday: Night Vigil (12:00am)</p>
+        <p>Monthly Program Night Vigil: 21, 22, 23 Every Month</p>
     </div>
 
-    <div class="profile">
-      <img src="assets/images/pastor.png">
+    <!-- LEADERS CENTERED SIDE-BY-SIDE -->
+    <div class="leaders">
+
+        <!-- Pastor -->
+        <div class="leader-box">
+            <img src="assets/images/pastor.png" class="leader-img">
+            <h2>Prophet Adeolu</h2>
+            <h3>A.K.A OKIKI JESU</h3>
+        </div>
+
+        <!-- Spiritual Mother -->
+        <div class="leader-box">
+            <img src="assets/images/spiritual-mother.png" class="leader-img">
+            <h2>Senior Prophet Abosede Adedeji</h2>
+            <h3>A.K.A Aremolekun</h3>
+        </div>
+
     </div>
-  </div>
 
-  <div class="name-box">
-    <h2>Prophet Adeolu</h2>
-    <h3>A.K.A OKIKI JESU</h3>
-  </div>
+    <!-- LOCATION + FOOTER -->
+    <div class="location">Oke Imole Ayo No 4, Elekuru, Akinyele Local Government, Moniya, Ibadan</div>
+    <div class="jesus">JESUS IS LORD</div>
 
-  <div class="mother-section">
-    <img src="assets/images/spiritual-mother.png">
-    <div>
-      Spiritual Mother:<br>
-      Senior Prophet Abosede Adedeji (A.K.A Aremolekun)
-    </div>
-  </div>
-
-  <div class="location">Oke Imole Ayo No 4, Elekuru, Akinyele Local Government, Moniya, Ibadan</div>
-  <div class="jesus">JESUS IS LORD</div>
-
-  <div class="footer">Tel: 07080785785, 09051552181</div>
+    <div class="footer">Tel: 07080785785, 09051552181</div>
 
 </div>
 
