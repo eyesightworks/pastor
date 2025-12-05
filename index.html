@@ -3,210 +3,202 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Church Program Poster</title>
+<title>Church Program Poster - Small Card Layout</title>
 
 <style>
-@page {
-  size: A4;
-  margin: 0;
-}
+  @page {
+    size: A4;
+    margin: 0;
+  }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
 
-body {
-  background: #000; /* black background */
-  font-family: "Segoe UI", Arial, sans-serif;
-  color: white;
-}
+  body {
+    background: #fff;
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #000;
+  }
 
-/* MAIN POSTER */
-.poster {
-  width: 794px;       /* A4 width @96dpi */
-  height: 1123px;     /* A4 height */
-  margin: auto;
-  color: white;
-  position: relative;
-  padding: 20px 30px;
-}
-
-/* HEADER */
-.header {
-  background: white;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 12px 18px;
-}
-
-.header img {
-  height: 55px;
-}
-
-.header-text h1 {
-  font-size: 20px;
-  color: #0a3e9a;
-  font-weight: 800;
-}
-
-.header-text h2 {
-  font-size: 16px;
-  color: #0a3e9a;
-}
-
-/* LEADERS + CENTER MESSAGE ROW */
-.leaders-center-row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-  margin-top: 80px; /* Adjusted for 1-inch gap */
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* Leader images styling */
-.leader {
-  text-align: center;
-  color: white;
-  width: 320px; /* wider container */
-}
-
-/* Wider name box */
-.leader .name-box {
-  border: 3px solid gold;
-  padding: 16px 14px; /* more padding */
-  margin-top: 12px;
-  border-radius: 10px;
-  background: rgba(0, 0, 0, 0.6);
-  width: 100%; /* full width of container */
-  box-sizing: border-box;
-}
-
-.leader img {
-  width: 320px; /* bigger images */
-  border-radius: 10px;
-  filter: drop-shadow(0 0 25px rgba(255,215,0,.9));
-  display: block;
-  margin: 0 auto;
-}
-
-.leader h2,
-.leader h3 {
-  margin: 0;
-  padding: 0;
-}
-
-/* CENTER MESSAGE between leaders */
-.center-message {
-  text-align: center;
-  max-width: 320px;
-  color: #f5c542;
-  user-select: none;
-}
-
-.center-message h2 {
-  font-size: 38px;
-  letter-spacing: 3px;
-  margin-bottom: 0.2em;
-}
-
-.center-message h1 {
-  font-size: 110px;
-  text-shadow:
-    0 0 10px #f5c542,
-    0 0 25px #c28f2c,
-    4px 4px 0 #000;
-  margin: 0.2em 0;
-}
-
-.center-message h3 {
-  font-size: 42px;
-  letter-spacing: 2px;
-  margin-top: 0.2em;
-}
-
-.center-message p {
-  margin-top: 10px;
-  font-size: 20px;
-}
-
-/* PROGRAM BOX BELOW */
-.program {
-  background: linear-gradient(#ffd44d, #f1b90b);
-  color: #000;
-  padding: 20px;
-  width: 100%;
-  max-width: 450px;
-  font-weight: bold;
-  box-shadow: 0 0 20px rgba(0,0,0,.7);
-  border-radius: 10px;
-  text-align: center;
-  margin: 50px auto 0;
-}
-
-.program p {
-  margin-bottom: 12px;
-}
-
-/* LOCATION */
-.location {
-  margin-top: 18px;
-  text-align: center;
-  font-size: 18px;
-}
-
-/* JESUS */
-.jesus {
-  text-align: center;
-  font-size: 42px;
-  font-weight: 900;
-  margin-top: 15px;
-  text-shadow: 0 0 15px gold;
-}
-
-/* FOOTER */
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background: red;
-  color: yellow;
-  text-align: center;
-  font-size: 28px;
-  font-weight: bold;
-  padding: 16px;
-}
-
-/* MOBILE PREVIEW ONLY */
-@media screen and (max-width: 900px) {
   .poster {
-    width: 100%;
-    height: auto;
-    padding: 10px 15px;
+    width: 600px;       /* smaller width */
+    height: 850px;      /* smaller height */
+    margin: auto;
+    position: relative;
+    padding: 20px 25px;
+  }
+
+  .card {
+    background: #f9f9f9;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    padding: 15px 20px;
+    margin-bottom: 30px;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .header img {
+    height: 40px; /* smaller logos */
+  }
+
+  .header-text h1 {
+    font-size: 16px;
+    color: #0a3e9a;
+    font-weight: 800;
+  }
+
+  .header-text h2 {
+    font-size: 14px;
+    color: #0a3e9a;
   }
 
   .leaders-center-row {
-    flex-direction: column;
-    gap: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    max-width: 700px;
+    margin: 0 auto 35px;
   }
 
   .leader {
-    width: 80%;
+    text-align: center;
+    width: 240px; /* smaller */
+  }
+
+  .leader .name-box {
+    border: 3px solid gold;
+    padding: 10px 12px;
+    margin-top: 12px;
+    border-radius: 12px;
+    background: rgba(0, 0, 0, 0.08);
+  }
+
+  .leader img {
+    width: 240px; /* smaller */
+    border-radius: 12px;
+    filter: drop-shadow(0 0 15px rgba(255,215,0,.9));
+  }
+
+  .leader h2,
+  .leader h3 {
+    margin: 0;
+    padding: 0;
   }
 
   .center-message {
-    max-width: 100%;
+    text-align: center;
+    max-width: 280px;
+    color: #b8860b;
+    user-select: none;
+  }
+
+  .center-message h2 {
+    font-size: 28px;
+    letter-spacing: 3px;
+    margin-bottom: 0.3em;
+  }
+
+  .center-message h1 {
+    font-size: 75px;
+    text-shadow:
+      0 0 7px #f5c542,
+      0 0 18px #c28f2c,
+      3px 3px 0 #000;
+    margin: 0.3em 0;
+  }
+
+  .center-message h3 {
+    font-size: 28px;
+    letter-spacing: 2px;
+    margin-top: 0.3em;
+  }
+
+  .center-message p {
+    margin-top: 10px;
+    font-size: 16px;
   }
 
   .program {
-    max-width: 90%;
+    background: linear-gradient(135deg, #ffd44d, #f1b90b);
+    color: #000;
+    padding: 18px 22px;
+    width: 100%;
+    max-width: 350px;
+    font-weight: bold;
+    box-shadow: 0 0 18px rgba(0,0,0,.15);
+    border-radius: 15px;
+    margin: 0 auto 35px;
+    text-align: center;
   }
-}
+
+  .program p {
+    margin-bottom: 12px;
+    font-size: 14px;
+  }
+
+  .location {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 25px;
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .jesus {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 900;
+    margin-bottom: 40px;
+    color: gold;
+    text-shadow: 0 0 10px gold;
+  }
+
+  .footer {
+    background: #900;
+    color: gold;
+    font-size: 20px;
+    text-align: center;
+    padding: 14px 0;
+    font-weight: 700;
+    border-radius: 0 0 15px 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+  }
+
+  @media screen and (max-width: 700px) {
+    .poster {
+      width: 100%;
+      height: auto;
+      padding: 15px;
+    }
+    .leaders-center-row {
+      flex-direction: column;
+      gap: 25px;
+      max-width: 100%;
+    }
+    .leader {
+      width: 90%;
+    }
+    .center-message {
+      max-width: 100%;
+    }
+    .program {
+      max-width: 90%;
+    }
+  }
 </style>
 </head>
 
@@ -214,12 +206,12 @@ body {
 
 <div class="poster">
 
-  <!-- HEADER -->
-  <div class="header">
+  <!-- HEADER CARD -->
+  <div class="card header">
     <img src="assets/images/logo-left.jpg" alt="Logo Left" />
     <div class="header-text">
       <h1>THE SACRED CHERUBIM AND SERAPHIAM CHURCH OF NIGERIA AND OVERSEA</h1>
-      <h2>ITED ANU CHERUBIM AND SERAPHIAM CHURCH</h2>
+      <h2>ITED ANU CHERUBIМ AND SERAPHIAM CHURCH</h2>
     </div>
     <img src="assets/images/logo-right1.png" alt="Logo Right 1" />
     <img src="assets/images/logo-right2.jpg" alt="Logo Right 2" />
@@ -246,7 +238,7 @@ body {
     </div>
 
     <!-- Pastor Right -->
-    <div class="leader">
+    <div class="leader" style="margin-left: 1in;">
       <img src="assets/images/pastor.png" alt="Prophet Adeolu" />
       <div class="name-box">
         <h2>Prophet Adeolu</h2>
@@ -256,8 +248,8 @@ body {
 
   </div>
 
-  <!-- PROGRAM BOX BELOW -->
-  <div class="program">
+  <!-- PROGRAM CARD -->
+  <div class="card program">
     <p>Sunday Service: (9am - 12pm)</p>
     <p>Tuesday: Night Vigil (12:00am)</p>
     <p>Friday: Night Vigil (12:00am)</p>
@@ -265,12 +257,14 @@ body {
   </div>
 
   <!-- LOCATION -->
-  <div class="location">
+  <div class="card location">
     Oke Imole Ayo No 4, Elekuru, Akinyele Local Government, Moniya, Ibadan
   </div>
 
-  <!-- JESUS -->
-  <div class="jesus">JESUS IS LORD</div>
+  <!-- JESUS CARD -->
+  <div class="card jesus">
+    JESUS IS LORD
+  </div>
 
   <!-- FOOTER -->
   <div class="footer">
