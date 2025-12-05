@@ -2,102 +2,130 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Church Banner</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<title>Modern Church Poster</title>
 <style>
-    body {
-        margin: 0;
-        padding: 0;
-        font-family: Arial, sans-serif;
-        background: #4B2E83;
-        color: white;
-    }
+  @page { size: A4; margin: 0; }
+  body { margin: 0; padding: 0; font-family: 'Segoe UI', Arial, sans-serif; background:#000; }
 
-    .banner {
-        width: 100%;
-        padding: 40px 20px;
-        text-align: center;
-        position: relative;
-    }
+  .poster {
+    width: 794px; height: 1123px; margin: auto;
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+                url('assets/images/bg-fire.jpg') center/cover no-repeat;
+    color:#fff; position: relative; padding: 20px 30px;
+  }
 
-    .left-image, .right-image {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        height: 320px;
-    }
+  /* HEADER */
+  .header {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 10px 0; border-bottom: 2px solid gold;
+  }
+  .header .logos img { height: 60px; margin-right: 12px; }
+  .header-title { text-align: center; flex: 1; }
+  .header-title h1 { font-size: 22px; font-weight: 800; color: gold; }
+  .header-title h2 { font-size: 16px; margin-top: 4px; color:#fff; }
 
-    .left-image {
-        left: 10px;
-    }
+  /* CENTER MESSAGE */
+  .center {
+    text-align:center; margin-top: 40px;
+  }
+  .center h2 { font-size: 30px; letter-spacing:3px; }
+  .center h1 { font-size: 90px; color: gold; font-weight: 900;
+    text-shadow:0 0 25px gold; }
+  .center h3 { font-size: 32px; letter-spacing:2px; }
+  .center p { margin-top: 10px; font-size: 22px; }
 
-    .right-image {
-        right: 10px;
-    }
+  /* CONTENT */
+  .content { display:flex; justify-content: space-between; margin-top: 60px; }
+  .program {
+    width: 48%; background: rgba(255,215,0,0.85); padding: 20px; color:#000;
+    border-radius:10px; box-shadow: 0 0 25px rgba(0,0,0,.6);
+  }
+  .program p { margin-bottom:14px; font-size:18px; font-weight:600; }
 
-    .name-tag {
-        position: absolute;
-        top: 78%;
-        transform: translateY(-50%);
-        font-size: 18px;
-        font-weight: bold;
-        width: 250px;
-        text-align: center;
-    }
+  .profile { width:48%; display:flex; justify-content:center; }
+  .profile img {
+    width: 320px; border-radius: 8px; box-shadow:0 0 20px gold;
+  }
 
-    .name-left {
-        left: 10px;
-    }
+  /* PASTOR NAME */
+  .name-box {
+    background: linear-gradient(#5c0a0a, #330505); width: 70%; margin: 40px auto 0;
+    padding: 18px; text-align:center; border-radius:12px;
+    box-shadow:0 0 25px rgba(0,0,0,.7);
+  }
+  .name-box h2 { font-size: 30px; color: gold; }
+  .name-box h3 { font-size: 22px; margin-top:6px; }
 
-    .name-right {
-        right: 10px;
-    }
+  .location { text-align:center; font-size:20px; margin-top:18px; }
+  .jesus { text-align:center; font-size:44px; margin-top:18px; color:gold;
+    text-shadow:0 0 15px gold; font-weight:900; }
 
-    .content {
-        max-width: 700px;
-        margin: auto;
-        background: rgba(0, 0, 0, 0.3);
-        padding: 20px 30px;
-        border-radius: 10px;
-        line-height: 1.5;
-        box-shadow: 0 0 15px rgba(0,0,0,0.4);
-    }
-
-    h1 {
-        margin-top: 0;
-        font-size: 32px;
-        font-weight: bold;
-    }
+  .footer {
+    position: absolute; bottom: 0; left:0; width:100%; background: #900;
+    color: gold; font-size: 26px; text-align:center; padding: 14px;
+    font-weight:700;
+  }
 </style>
 </head>
-
 <body>
 
-<div class="banner">
+<div class="poster">
 
-    <!-- LEFT IMAGE -->
-    <img src="images/spiritual-mother.png" class="left-image">
-    <div class="name-tag name-left">
-        Senior Prophet Abosede Adedeji <br>(aka Aremolekun)
+  <div class="header">
+    <div class="logos">
+      <img src="assets/images/logo-left.jpg">
     </div>
 
-    <!-- RIGHT IMAGE -->
-    <img src="images/pastor.png" class="right-image">
-    <div class="name-tag name-right">
-        Pastor
+    <div class="header-title">
+      <h1>THE SACRED CHERUBIM AND SERAPHIM CHURCH OF NIGERIA AND OVERSEA</h1>
+      <h2>ITED ANU CHERUBIM AND SERAPHIM CHURCH</h2>
     </div>
 
-    <!-- CENTER CONTENT -->
-    <div class="content">
-        <h1>Weekly Services</h1>
-
-        <p><strong>Sunday Service:</strong> 9am – 12pm</p>
-        <p><strong>Tuesday:</strong> Night Vigil (12:00am)</p>
-        <p><strong>Friday:</strong> Night Vigil (12:00am)</p>
-
-        <p><strong>Monthly Program Night Vigil:</strong> 21, 22, 23 Every Month</p>
+    <div class="logos">
+      <img src="assets/images/logo-right1.png">
+      <img src="assets/images/logo-right2.jpg">
     </div>
+  </div>
+
+  <div class="center">
+    <h2>THERE IS NO</h2>
+    <h1>CH_RCH</h1>
+    <h3>WITHOUT U</h3>
+    <p>You’re Welcome</p>
+  </div>
+
+  <div class="content">
+    <div class="program">
+      <p>Sunday Service: (9am - 12pm)</p>
+      <p>Tuesday: Night Vigil (12:00am)</p>
+      <p>Friday: Night Vigil (12:00am)</p>
+      <p>Monthly Program Night Vigil: 21, 22, 23 Every Month</p>
+    </div>
+
+    <div class="profile">
+      <img src="assets/images/pastor.png">
+    </div>
+  </div>
+
+  <div class="name-box">
+    <h2>Prophet Adeolu</h2>
+    <h3>A.K.A OKIKI JESU</h3>
+  </div>
+
+  <!-- SPIRITUAL MOTHER -->
+  <div style="margin-top:40px; display:flex; align-items:center; gap:25px; color:white;">
+    <img src="assets/images/spiritual-mother.png"
+         style="width:260px; border-radius:10px;">
+    <div style="font-size:24px; font-weight:700; line-height:1.4;">
+      Spiritual Mother:<br>
+      Senior Prophet Abosede Adedeji (A.K.A Aremolekun)
+    </div>
+  </div>
+
+  <div class="location">Oke Imole Ayo No 4, Elekuru, Akinyele Local Government, Moniya, Ibadan</div>
+  <div class="jesus">JESUS IS LORD</div>
+  <div class="footer">Tel: 07080785785, 09051552181</div>
 
 </div>
 
