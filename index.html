@@ -6,156 +6,177 @@
 <title>Church Program Poster</title>
 
 <style>
-*{box-sizing:border-box;margin:0;padding:0;font-family:Arial,Helvetica,sans-serif;}
-
-body{
-  background:#000;
+@page {
+  size: A4;
+  margin: 0;
 }
 
-.poster{
-  max-width:1100px;
-  margin:auto;
-  background:url("assets/images/bg-fire.jpg") center/cover no-repeat;
-  color:#fff;
-  padding-bottom:20px;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #000;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* MAIN POSTER */
+.poster {
+  width: 794px;       /* A4 width @96dpi */
+  height: 1123px;     /* A4 height */
+  margin: auto;
+  background: 
+    linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
+    url("assets/images/bg-fire.jpg") center/cover no-repeat;
+  color: white;
+  position: relative;
 }
 
 /* HEADER */
-.header{
-  background:#fff;
-  color:#000;
-  display:flex;
-  align-items:center;
-  padding:10px;
-  gap:10px;
-  flex-wrap:wrap;
+.header {
+  background: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 18px;
 }
 
-.header img{
-  height:60px;
+.header img {
+  height: 55px;
 }
 
-.header-text h1{
-  color:#103c8c;
-  font-size:22px;
-  font-weight:800;
-  line-height:1.2;
+.header-text h1 {
+  font-size: 20px;
+  color: #0a3e9a;
+  font-weight: 800;
 }
 
-.header-text h2{
-  color:#103c8c;
-  font-size:18px;
-  margin-top:4px;
+.header-text h2 {
+  font-size: 16px;
+  color: #0a3e9a;
 }
 
-/* CENTER TEXT */
-.center-text{
-  text-align:center;
-  margin:30px 10px;
+/* CENTER MESSAGE */
+.center {
+  text-align: center;
+  margin-top: 65px;
 }
 
-.center-text h2{
-  font-size:28px;
-  letter-spacing:2px;
+.center h2 {
+  font-size: 28px;
+  letter-spacing: 3px;
 }
 
-.center-text h1{
-  font-size:64px;
-  color:gold;
-  text-shadow:3px 3px #000;
+.center h1 {
+  font-size: 78px;
+  color: #f5c542;
+  text-shadow:
+    0 0 10px #f5c542,
+    0 0 25px #c28f2c,
+    4px 4px 0 #000;
+  margin: 10px 0;
 }
 
-.center-text h3{
-  font-size:26px;
+.center h3 {
+  font-size: 30px;
+  letter-spacing: 2px;
 }
 
-/* CONTENT */
-.content{
-  display:flex;
-  flex-wrap:wrap;
-  padding:20px;
+.center p {
+  margin-top: 10px;
+  font-size: 20px;
 }
 
-/* LEFT BOX */
-.left-box{
-  background:#ffcc00;
-  color:#000;
-  padding:15px;
-  width:100%;
-  max-width:420px;
-  font-size:16px;
-  font-weight:bold;
+/* CONTENT SECTION */
+.content {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 40px;
 }
 
-.left-box p{
-  margin-bottom:8px;
+/* PROGRAM BOX */
+.program {
+  background: linear-gradient(#ffd44d, #f1b90b);
+  color: #000;
+  padding: 20px;
+  width: 45%;
+  font-weight: bold;
+  box-shadow: 0 0 20px rgba(0,0,0,.7);
 }
 
-/* RIGHT IMAGE */
-.right-box{
-  flex:1;
-  display:flex;
-  justify-content:center;
-  align-items:center;
+.program p {
+  margin-bottom: 12px;
 }
 
-.right-box img{
-  max-width:350px;
-  width:100%;
+/* IMAGE */
+.profile {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+}
+
+.profile img {
+  width: 310px;
+  filter: drop-shadow(0 0 20px rgba(255,215,0,.9));
 }
 
 /* NAME BOX */
-.name-box{
-  background:#7a1b1b;
-  margin:10px auto;
-  padding:15px;
-  max-width:520px;
-  border-radius:10px;
-  text-align:center;
+.name-box {
+  background: linear-gradient(#7a1b1b, #540b0b);
+  width: 65%;
+  margin: auto;
+  padding: 18px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 0 25px rgba(0,0,0,.8);
 }
 
-.name-box h2{
-  font-size:22px;
+.name-box h2 {
+  font-size: 26px;
 }
 
-.name-box h3{
-  margin-top:5px;
-  font-size:18px;
+.name-box h3 {
+  margin-top: 5px;
+  font-size: 20px;
 }
 
 /* LOCATION */
-.location{
-  background:#000;
-  color:#fff;
-  padding:12px;
-  text-align:center;
-  font-size:18px;
+.location {
+  margin-top: 18px;
+  text-align: center;
+  font-size: 18px;
 }
 
 /* JESUS */
-.jesus{
-  text-align:center;
-  color:white;
-  font-size:36px;
-  font-weight:bold;
-  margin-top:10px;
+.jesus {
+  text-align: center;
+  font-size: 42px;
+  font-weight: 900;
+  margin-top: 15px;
+  text-shadow: 0 0 15px gold;
 }
 
 /* FOOTER */
-.footer{
-  background:red;
-  color:yellow;
-  font-size:26px;
-  font-weight:bold;
-  text-align:center;
-  padding:15px;
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: red;
+  color: yellow;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 16px;
 }
 
-/* RESPONSIVE */
-@media(max-width:768px){
-  .center-text h1{font-size:48px;}
-  .content{flex-direction:column;}
-  .left-box{max-width:100%;}
+/* MOBILE PREVIEW ONLY */
+@media screen and (max-width: 900px) {
+  .poster {
+    width: 100%;
+    height: auto;
+  }
 }
 </style>
 </head>
@@ -166,55 +187,48 @@ body{
 
   <!-- HEADER -->
   <div class="header">
-    <img src="assets/images/logo-left.png" alt="">
+    <img src="assets/images/logo-left.png">
     <div class="header-text">
       <h1>THE SACRED CHERUBIM AND SERAPHIAM CHURCH OF NIGERIA AND OVERSEA</h1>
-      <h2>ITED ANU CHERUBIM AND SERAPHIAM CHURCH</h2>
+      <h2>ITEDO ANU CHERUBIM AND SERAPHIAM CHURCH</h2>
     </div>
-    <img src="assets/images/logo-right1.png" alt="">
-    <img src="assets/images/logo-right2.png" alt="">
+    <img src="assets/images/logo-right1.png">
+    <img src="assets/images/logo-right2.png">
   </div>
 
-  <!-- CENTER MESSAGE -->
-  <div class="center-text">
+  <!-- CENTER -->
+  <div class="center">
     <h2>THERE IS NO</h2>
     <h1>CH_RCH</h1>
     <h3>WITHOUT U</h3>
-    <p style="margin-top:10px;">You're Welcome</p>
+    <p>You’re Welcome</p>
   </div>
 
   <!-- CONTENT -->
   <div class="content">
-
-    <div class="left-box">
+    <div class="program">
       <p>Sunday Service: (9am - 12pm)</p>
       <p>Tuesday: Night Vigil (12:00am)</p>
       <p>Friday: Night Vigil (12:00am)</p>
       <p>Monthly Program Night Vigil: 21, 22, 23 Every Month</p>
     </div>
 
-    <div class="right-box">
-      <img src="assets/images/pastor.png" alt="Prophet">
+    <div class="profile">
+      <img src="assets/images/pastor.png">
     </div>
-
   </div>
 
-  <!-- NAME -->
   <div class="name-box">
     <h2>Prophet Adeolu</h2>
     <h3>A.K.A OKIKI JESU</h3>
   </div>
 
-  <!-- LOCATION -->
   <div class="location">
     Oke Imole Ayo No 4, Elekuru, Akinyele Local Government, Moniya, Ibadan
   </div>
 
-  <div class="jesus">
-    JESUS IS LORD
-  </div>
+  <div class="jesus">JESUS IS LORD</div>
 
-  <!-- FOOTER -->
   <div class="footer">
     Tel: 07080785785, 09051552181
   </div>
