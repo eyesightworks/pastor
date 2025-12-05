@@ -76,6 +76,15 @@ body {
   width: 280px;
 }
 
+/* Adjust positions: move spiritual mother more left, pastor more right */
+.leader.spiritual {
+  margin-right: auto; /* pushes to far left */
+}
+
+.leader.pastor {
+  margin-left: auto; /* pushes to far right */
+}
+
 /* Added box around leader names */
 .leader .name-box {
   border: 3px solid gold;
@@ -225,7 +234,7 @@ body {
   <div class="leaders-center-row">
 
     <!-- Spiritual Mother Left -->
-    <div class="leader">
+    <div class="leader spiritual">
       <img src="assets/images/spiritual-mother.png" alt="Senior Prophet Abosede Adedeji" />
       <div class="name-box">
         <h2>Senior Prophet Abosede Adedeji</h2>
@@ -242,7 +251,7 @@ body {
     </div>
 
     <!-- Pastor Right -->
-    <div class="leader">
+    <div class="leader pastor">
       <img src="assets/images/pastor.png" alt="Prophet Adeolu" />
       <div class="name-box">
         <h2>Prophet Adeolu</h2>
